@@ -1,0 +1,41 @@
+.groupVK{
+    border: 1px #39a8db solid;
+    margin: 7px;
+    /* display: inline-block; */
+}
+
+.groupVK .groupPhoto{
+    /* display: block; */
+    width: 100px;
+    /* height: 100px; */
+    float: left;
+    /* display: inline-block; */
+    margin-right:15px; 
+}
+
+.groupVK .groupInfo{
+    min-height: 100px;
+    background-color: rgb(222, 233, 233);
+    padding-left: 15px;
+    /* display: inline; */
+    min-width: 400px;
+}
+.scanON{
+    color:green;
+}
+.scanOFF{
+    color: orangered;
+}
+.groupVK .groupInfo .groupName{
+    font-size: 20px;
+    display: inline-block;
+    padding: 5px 15px 5px 0px;
+}
+
+.groupVK .groupInfo .label{
+    display: inline-block;
+    width: 180px;
+}
+.groupVK .groupInfo .info{
+    display: inline-block;
+}

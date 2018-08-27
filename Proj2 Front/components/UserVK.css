@@ -1,0 +1,84 @@
+.userVK{
+    /* animation: appearance 1s ease-in-out; */
+    
+    animation: slideDown 1s ease;
+    margin-top: 5px;
+    min-height: 100px;
+    background-color:#edeef0;
+}
+
+.userVK.add{
+    border: 2px #31e22b solid;
+}
+
+.userVK.del{
+    border: 2px #ee291b solid;
+}
+.userVK .userPhoto{
+    width: 100px;
+    float: left;
+}
+
+.userVK .fullView.offView{
+    display:none;
+}
+.userVK .userInfo .userName{
+    font-size: 20px;
+    display: inline-block;
+    margin: 5px 15px 5px 0px;
+}
+
+.userVK .userInfo{
+    margin-left: 20px;
+    display: inline-block;
+    width: 400px;
+}
+.userVK .userInfo .label{
+    display: inline-block;
+    width: 175px;
+}
+.userVK .userInfo .info{
+    display: inline-block;
+}
+
+.userVK input[type='button']{
+    border: none;
+    font-size: 14px;
+    text-transform: uppercase;
+    background-color: #edeef0;
+    color: #1624f0;
+    font-weight: bold;
+    float: right;
+}
+
+.userVK input[type='button']:hover{
+    color: #050a44;
+}
+.userVK .socialNetworks>p{
+    display: inline-block;
+    margin: 0px 5px;
+}
+
+.userVK .socialNetworks .socialIcon{
+    display: block;
+    width: 25px;
+    height:25px;
+    background: url('/images/icons.png') no-repeat;
+    background-size: 240px 200px;
+}
+
+.userVK .socialNetworks .facebook .socialIcon{
+    background-position: -88px -8px;
+}
+
+.userVK .socialNetworks .skype .socialIcon{
+    background-position: -127px -127px;
+}
+
+.userVK .socialNetworks .twitter .socialIcon{
+    background-position: -205px -166px;
+}
+
+.userVK .socialNetworks .instagram .socialIcon{
+    background-position: -205px -9px;
+}

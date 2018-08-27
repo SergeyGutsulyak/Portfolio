@@ -1,0 +1,394 @@
+
+.UsersList .LinksPages{
+    /* padding-left:18px;  */
+    background-color: rgb(100, 130, 200);
+}
+
+.UsersList .LinksPages .PageLinkSmall{
+display: inline-block;
+width: 35px;
+margin-left: 3px;
+text-align: center;
+}
+
+.UsersList .LinksPages .PageLinkSmall .PageUserLink{
+  background-color: rgb(203, 252, 249);
+  display: block;
+  width: 100%;  
+}
+
+.UsersList .LinksPages .PageLinkSmall .PageUserLink:hover{
+    background-color: rgb(156, 201, 209);
+  }
+.UsersList .LinksPages .PageLinkSmall .PageUserLink:hover+.UnderLink{
+    background-color: rgb(25, 189, 218);
+  }
+  .UsersList .LinksPages .PageLinkSmall .PageUserLink.ActivePageLink+.UnderLink{
+    background-color: rgb(208, 18, 233);
+  }
+
+.UsersList .LinksPages .PageLinkSmall .UnderLink{
+    height: 4px;
+    background-color: rgb(212, 145, 229);
+    color: black;
+}
+
+.UsersList .LinksPages .PageLinkSmall a{
+    color: black;
+}
+.UsersList .LinksPages .PageLinkSmall a:visited{
+    color: black;
+}
+
+.UsersList .LinksPages .PageLinkSmall a:active{
+    color: black;
+}
+
+
+.UsersList .ControlPanel{
+    padding: 10px 0px;
+    background-color: rgb(100, 150, 200);
+}
+
+.UsersList .ControlPanel input{
+    display: inline-block;
+    width: 80px;
+    text-transform: uppercase;
+    margin-right: 10px;
+    color: aquamarine;
+    font-size: 16px;
+    background-color:  rgb(100, 150, 200);
+    border: 1px solid #a4f181;
+
+}
+.UsersList .ControlPanel input:hover{
+    background-color:  rgb(87, 121, 155);
+}
+.UsersList .ControlPanel .SelectCountOnPage{
+    display: inline-block;
+    float: right;
+    margin-right: 15px;
+    color: aquamarine;
+}
+
+
+/* дата */
+.UsersList .Date{
+    overflow: hidden;
+    text-align: center;
+    font-size: 20px;
+    margin: 5px;
+}
+
+.UsersList .Date span{
+    color: #00ff00;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.UsersList .Date:before,
+.UsersList .Date:after {
+    /* Обязательно указываем пустое свойство content, 
+    ** иначе псевдоэлементы не появятся на сайте */
+    content: "";
+    /* Указываем что наши линии будут строчно-блочные и 
+    ** выравнивание по высоте - по центру */
+    display: inline-block;
+    vertical-align: middle;
+    /* Задаем ширину 100% и выбираем высоту линии, 
+    ** в нашем примере она равна 4 пикселям */
+    width: 100%;
+    height: 3px;
+    /* Добавляем цвет для линии */
+    background-color:  #00ff00;
+    /* Добавляем пседоэлемантам возможность изменить 
+    ** позицию линии, для создания отступов от текста */
+    position: relative;
+}
+.UsersList .Date:before {
+    /* Смещаем левую линию на 100% влево, чтобы линия 
+    ** встала рядом с текстом слева */
+    margin-left: -100%;
+    /* Указываем в пикселях отступ линии от текста заголовка */
+    left: -10px;
+   }
+.UsersList .Date:after {
+    /* Смещаем правую линию на 100% вправо, чтобы 
+    ** линия встала рядом с текстом справа */
+    margin-right: -100%;
+    /* Указываем в пикселях отступ линии от текста заголовка */
+    right: -10px;
+}.userVK{
+    margin-top: 5px;
+    min-height: 100px;
+    background-color:#edeef0;
+}
+
+.userVK.add{
+    border: 2px #31e22b solid;
+}
+
+.userVK.del{
+    border: 2px #ee291b solid;
+}
+.userVK .userPhoto{
+    width: 100px;
+    float: left;
+}
+
+.userVK .fullView.offView{
+    display:none;
+}
+.userVK .userInfo .userName{
+    font-size: 20px;
+    display: inline-block;
+    margin: 5px 15px 5px 0px;
+}
+
+.userVK .userInfo{
+    margin-left: 20px;
+    display: inline-block;
+    width: 400px;
+}
+.userVK .userInfo .label{
+    display: inline-block;
+    width: 175px;
+}
+.userVK .userInfo .info{
+    display: inline-block;
+}
+
+.userVK input[type='button']{
+    border: none;
+    font-size: 14px;
+    text-transform: uppercase;
+    background-color: #edeef0;
+    color: #1624f0;
+    font-weight: bold;
+    float: right;
+}
+
+.userVK input[type='button']:hover{
+    color: #050a44;
+}
+.userVK .socialNetworks>p{
+    display: inline-block;
+    margin: 0px 5px;
+}
+
+.userVK .socialNetworks .socialIcon{
+    display: block;
+    width: 25px;
+    height:25px;
+    background: url('/images/icons.png') no-repeat;
+    background-size: 240px 200px;
+}
+
+.userVK .socialNetworks .facebook .socialIcon{
+    background-position: -88px -8px;
+}
+
+.userVK .socialNetworks .skype .socialIcon{
+    background-position: -127px -127px;
+}
+
+.userVK .socialNetworks .twitter .socialIcon{
+    background-position: -205px -166px;
+}
+
+.userVK .socialNetworks .instagram .socialIcon{
+    background-position: -205px -9px;
+}.LoadAnimation{
+    height: 900px;
+    position: relative;
+}
+
+.LoadAnimation .AnimationContainer{
+    /* height: 200px; */
+    position: absolute;
+    /* background-color: black; */
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%) 
+}
+
+.LoadAnimation .ball {
+    background-color: rgba(0,0,0,0);
+    border:5px solid rgba(0,183,229,0.9);
+    opacity:.9;
+    border-top:5px solid rgba(0,0,0,0);
+    border-left:5px solid rgba(0,0,0,0);
+    border-radius:50px;
+    box-shadow: 0 0 35px #2187e7;
+    width:50px;
+    height:50px;
+    margin:0 auto;
+    -moz-animation:spin .5s infinite linear;
+    -webkit-animation:spin .5s infinite linear;
+   }
+   .LoadAnimation .ball1 {
+    background-color: rgba(0,0,0,0);
+    border:5px solid rgba(0,183,229,0.9);
+    opacity:.9;
+    border-top:5px solid rgba(0,0,0,0);
+    border-left:5px solid rgba(0,0,0,0);
+    border-radius:50px;
+    box-shadow: 0 0 15px #2187e7; 
+    width:30px;
+    height:30px;
+    margin:0 auto;
+    position:relative;
+    top:-50px;
+    -moz-animation:spinoff .5s infinite linear;
+    -webkit-animation:spinoff .5s infinite linear;
+   }
+   @-moz-keyframes spin {
+    0% { -moz-transform:rotate(0deg); }
+    100% { -moz-transform:rotate(360deg); }
+   }
+   @-moz-keyframes spinoff {
+    0% { -moz-transform:rotate(0deg); }
+    100% { -moz-transform:rotate(-360deg); }
+   }
+   @-webkit-keyframes spin {
+    0% { -webkit-transform:rotate(0deg); }
+    100% { -webkit-transform:rotate(360deg); }
+   }
+   @-webkit-keyframes spinoff {
+    0% { -webkit-transform:rotate(0deg); }
+    100% { -webkit-transform:rotate(-360deg); }
+   }
+.groupVK{
+    border: 1px #39a8db solid;
+    margin: 7px;
+    /* display: inline-block; */
+}
+
+.groupVK .groupPhoto{
+    /* display: block; */
+    width: 100px;
+    /* height: 100px; */
+    float: left;
+    /* display: inline-block; */
+    margin-right:15px; 
+}
+
+.groupVK .groupInfo{
+    min-height: 100px;
+    background-color: rgb(222, 233, 233);
+    padding-left: 15px;
+    /* display: inline; */
+    min-width: 400px;
+}
+.scanON{
+    color:green;
+}
+.scanOFF{
+    color: orangered;
+}
+.groupVK .groupInfo .groupName{
+    font-size: 20px;
+    display: inline-block;
+    padding: 5px 15px 5px 0px;
+}
+
+.groupVK .groupInfo .label{
+    display: inline-block;
+    width: 180px;
+}
+.groupVK .groupInfo .info{
+    display: inline-block;
+}
+.FormAddGroup{
+    margin: 10px;
+    border: 1px #000000 solid;
+    padding: 10px;
+    min-width: 400px;
+}
+.FormAddGroup .labelText{
+    width: 200px;
+    text-align: right;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.FormAddGroup label{
+    display: inline-block;
+    margin: 4px 0px;
+}
+
+.FormAddGroup input[type='button']{
+    margin-left: 210px;
+    margin-top: 5px;
+    width: 80px;
+    text-align: center;
+}
+
+.FormAddGroup .periodScan input{
+    width: 60px;
+}.PageLink {
+    text-transform: uppercase;
+    font-size: 16px;
+    color: rgb(19, 247, 247);
+    margin-right: 10px;
+}
+.PageLink:hover {
+    color: rgb(217, 250, 250);
+}
+.ActivePageLink {
+    font-weight: bold;
+    border-bottom:1px solid rgb(19, 247, 247);
+}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { 
+	margin:0;
+	padding:0;
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+fieldset,img { 
+	border:0;
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+	font-style:normal;
+	font-weight:normal;
+}
+ol,ul {
+	list-style:none;
+}
+caption,th {
+	text-align:left;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-size:100%;
+	font-weight:normal;
+}
+q:before,q:after {
+	content:'';
+}
+abbr,acronym { border:0;}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}body{
+	background-color: lightgray;
+}
+
+a{
+	text-decoration: none;
+}
+
+* {
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#container{
+	margin: 0px 20px;
+	padding: 20px;
+	min-width: 600px;
+	background-color: rgb(100, 150, 200);
+}
+/*# sourceMappingURL=main.bundle.8bf50094177ee1b69ce0.css.map*/

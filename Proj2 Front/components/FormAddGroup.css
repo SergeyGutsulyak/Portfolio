@@ -1,0 +1,28 @@
+.FormAddGroup{
+    margin: 10px;
+    border: 1px #000000 solid;
+    padding: 10px;
+    min-width: 400px;
+}
+.FormAddGroup .labelText{
+    width: 200px;
+    text-align: right;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.FormAddGroup label{
+    display: inline-block;
+    margin: 4px 0px;
+}
+
+.FormAddGroup input[type='button']{
+    margin-left: 210px;
+    margin-top: 5px;
+    width: 80px;
+    text-align: center;
+}
+
+.FormAddGroup .periodScan input{
+    width: 60px;
+}

@@ -1,0 +1,124 @@
+
+.UsersList .LinksPages{
+    /* padding-left:18px;  */
+    background-color: rgb(100, 130, 200);
+}
+.UsersList .UsersContainer{
+    /* animation: appearance 1s ease-in-out; */
+}
+
+.UsersList .LinksPages .PageLinkSmall{
+display: inline-block;
+width: 35px;
+margin-left: 3px;
+text-align: center;
+}
+
+.UsersList .LinksPages .PageLinkSmall .PageUserLink{
+  background-color: rgb(203, 252, 249);
+  display: block;
+  width: 100%;  
+}
+
+.UsersList .LinksPages .PageLinkSmall .PageUserLink:hover{
+    background-color: rgb(156, 201, 209);
+  }
+.UsersList .LinksPages .PageLinkSmall .PageUserLink:hover+.UnderLink{
+    background-color: rgb(25, 189, 218);
+  }
+  .UsersList .LinksPages .PageLinkSmall .PageUserLink.ActivePageLink+.UnderLink{
+    background-color: rgb(208, 18, 233);
+  }
+
+.UsersList .LinksPages .PageLinkSmall .UnderLink{
+    height: 4px;
+    background-color: rgb(212, 145, 229);
+    color: black;
+}
+
+.UsersList .LinksPages .PageLinkSmall a{
+    color: black;
+}
+.UsersList .LinksPages .PageLinkSmall a:visited{
+    color: black;
+}
+
+.UsersList .LinksPages .PageLinkSmall a:active{
+    color: black;
+}
+
+
+.UsersList .ControlPanel{
+    padding: 10px 0px;
+    background-color: rgb(100, 150, 200);
+}
+
+.UsersList .ControlPanel input{
+    display: inline-block;
+    width: 80px;
+    text-transform: uppercase;
+    margin-right: 10px;
+    color: aquamarine;
+    font-size: 16px;
+    background-color:  rgb(100, 150, 200);
+    border: 1px solid #a4f181;
+
+}
+.UsersList .ControlPanel input:hover{
+    background-color:  rgb(87, 121, 155);
+}
+.UsersList .ControlPanel .SelectCountOnPage{
+    display: inline-block;
+    float: right;
+    margin-right: 15px;
+    color: aquamarine;
+}
+
+
+/* дата */
+.UsersList .Date{
+    overflow: hidden;
+    text-align: center;
+    font-size: 20px;
+    margin: 5px;
+}
+
+.UsersList .Date span{
+    color: #00ff00;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.UsersList .Date:before,
+.UsersList .Date:after {
+    /* Обязательно указываем пустое свойство content, 
+    ** иначе псевдоэлементы не появятся на сайте */
+    content: "";
+    /* Указываем что наши линии будут строчно-блочные и 
+    ** выравнивание по высоте - по центру */
+    display: inline-block;
+    vertical-align: middle;
+    /* Задаем ширину 100% и выбираем высоту линии, 
+    ** в нашем примере она равна 4 пикселям */
+    width: 100%;
+    height: 3px;
+    /* Добавляем цвет для линии */
+    background-color:  #00ff00;
+    /* Добавляем пседоэлемантам возможность изменить 
+    ** позицию линии, для создания отступов от текста */
+    position: relative;
+}
+.UsersList .Date:before {
+    /* Смещаем левую линию на 100% влево, чтобы линия 
+    ** встала рядом с текстом слева */
+    margin-left: -100%;
+    /* Указываем в пикселях отступ линии от текста заголовка */
+    left: -10px;
+   }
+.UsersList .Date:after {
+    /* Смещаем правую линию на 100% вправо, чтобы 
+    ** линия встала рядом с текстом справа */
+    margin-right: -100%;
+    /* Указываем в пикселях отступ линии от текста заголовка */
+    right: -10px;
+}
